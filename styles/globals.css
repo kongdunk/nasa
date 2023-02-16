@@ -1,9 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@600&display=swap");
 :root {
   --max-width: 1100px;
   --border-radius: 12px;
-  --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
-    'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
-    'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
+  --font-mono: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono",
+    "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro",
+    "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
 
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -104,4 +105,70 @@ a {
   html {
     color-scheme: dark;
   }
+}
+
+.ImgContainer {
+  margin: 0.5rem;
+}
+.ImagesContainer {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+h1 {
+  color: #105bd8;
+  font-size: 3rem;
+  font-family: "Kanit", sans-serif;
+}
+.earthLink {
+  color: #dd361c;
+  font-family: "Kanit", sans-serif;
+  text-decoration: underline;
+}
+.earthTable {
+  display: flex;
+  flex-direction: column;
+}
+.mainSection {
+  width: 100%;
+  display: flex;
+  justify-conent: center;
+  flex-direction: column;
+  align-items: center;
+}
+.subSection {
+  display: flex;
+  justify-conent: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 3rem;
+}
+.tableBody {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.tableLabel {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  margin: 1rem;
+  font-family: "Kanit", sans-serif;
+}
+.smallEarthPic {
+  border-radius: 1rem;
+}
+.viewButton {
+  background-color: #105bd8;
+  color: #ffffff;
+  padding: 0.7rem;
+  border-radius: 0.3rem;
+  border-color: #ffffff;
+  transition-duration: 0.2s;
+}
+
+.viewButton:hover {
+  background-color: #dd361c;
+  transition-duration: 0.2s;
 }

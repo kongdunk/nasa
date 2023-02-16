@@ -29,11 +29,13 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-      <Link href="polychromatic" > polychromatic </Link>
+      <h1> Nasa Gallery </h1>
+      <Link className='earthLink' href="polychromatic" > Polychromatic Images of Earth  </Link>
+      <div className='ImagesContainer'>
       {
         data && data.results.map((tech, index) => {
           return(
-            <div key={index}>
+            <div key={index} className="ImgContainer">
               {
                 tech && tech.map((t,ind) => {
                   if(ind === 10) {
@@ -47,6 +49,7 @@ export default function Home() {
           )
         })
       }
+      </div>
       </main>
     </>
   )

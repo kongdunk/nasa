@@ -55,32 +55,32 @@ export default function Polychromatic() {
 
     return(
         <>
-        Polychromatic
+        <div className="mainSection">
+        <h1>Polychromatic</h1>
         <Image src={image} alt={image} width={200} height={200  } />
         <div>{time}</div>
         <div>{coords[0]}, {coords[1]}</div>
-
-        <table>
+        </div>
+        <table className="earthTable">
             <thead>
-                <tr>
+                <tr className="tableLabel">
                     <th>Time</th>
                     <th>Latitude</th>
                     <th>Longitude</th>
                     <th>Image</th>
-                    <th></th>
                 </tr>
             </thead>
-            <tbody>
+            <tbody className="tableBody">
                 {
                     images.map((e, i) => {
                         return(
-                            <tr key={i}>
+                            <tr key={i} className='subSection'>
                                 <td>{e.time}</td>
                                 <td>{e.coords.lat}</td>
                                 <td>{e.coords.lon}</td>
-                                <td><Image src={e.image} alt={i} width={200} height={200} /></td>
+                                <td><Image className="smallEarthPic" src={e.image} alt={i} width={200} height={200} /></td>
                                 <td>
-                                    <button onClick={() => {
+                                    <button className="viewButton" onClick={() => {
                                         setImage(e.image);
                                         setTime(e.time);
                                         setCoords([e.coords.lat, e.coords.lon]);
